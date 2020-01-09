@@ -1,5 +1,6 @@
 #include <U8glib.h>
 
+
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2019 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -477,9 +478,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 21.73
-  #define DEFAULT_Ki 1.54
-  #define DEFAULT_Kd 76.55
+  #define DEFAULT_Kp 12.34
+  #define DEFAULT_Ki 0.61
+  #define DEFAULT_Kd 62.66
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -724,7 +725,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 372 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 410 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1039,7 +1040,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
